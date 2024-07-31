@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface UserResource {
     @GetMapping(value = "/{id}")
-    ResponseEntity<?> findById(@PathVariable Long id);
+    ResponseEntity<User> findById(@PathVariable Long id);
 
     @GetMapping
     ResponseEntity<List<User>> findAll();
